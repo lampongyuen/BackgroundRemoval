@@ -35,7 +35,7 @@ def fix_image(upload):
 
 
 col1, col2 = st.columns(2)
-my_upload = st.sidebar.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
+my_upload = st.sidebar.file_uploader("Please upload an image of type png, jpg, jpeg", type=["png", "jpg", "jpeg"])
 
 if my_upload is not None:
     if my_upload.size > MAX_FILE_SIZE:
